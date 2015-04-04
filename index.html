@@ -2,20 +2,300 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Shreya by thexasp</title>
+    <title>Mycutepillu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <style>
+    body {
+  margin-top: 100px;
+}
+
+p {font: italic 75px Georgia; text-align: center;}
+
+span {
+  font-size: 60px;
+  font-family: Georgia;
+  font-style: normal;
+  color: firebrick;
+}
+
+span:hover {
+  cursor: pointer;
+}
+*{
+ border: 0;
+ margin: 0;
+ padding: 0;
+ webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -ms-box-sizing: border-box;
+ -o-box-sizing: border-box;
+ -box-sizing: border-box;
+}
+body{
+ background: #1A1A1A;
+}
+.heart-wrap{
+ position: relative;
+ display: block;
+ width: 300px;
+ height: 300px;
+ margin: 0 auto;
+ z-index: 0;
+        border: 1px solid #AA5EDF;
+        border-radius: 50%;
+}
+.heart{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 100px;
+ height: 90px;
+ margin-top: -35px;
+ margin-left: -50px;
+ z-index: 5;
+ -webkit-transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0s;
+ -moz-transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0s;
+ -ms-transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0s;
+ -o-transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0s;
+ transition: all 0.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0s;
+ -webkit-animation: beat 1s infinite ;
+ -o-animation: beat 1s infinite ;
+ animation: beat 1s infinite ;
+}
+ 
+.heart:before, .heart:after {
+ position: absolute;
+ content: "";
+ left: 50px;
+ top: 0;
+ width: 50px;
+ height: 80px;
+ background: pink;
+ border-radius: 50px 50px 0 0;
+ -webkit-transform: rotate(-45deg);
+ -moz-transform: rotate(-45deg);
+ -ms-transform: rotate(-45deg);
+ -o-transform: rotate(-45deg);
+ transform: rotate(-45deg);
+ -webkit-transform-origin: 0 100% 0;
+ -moz-transform-origin: 0 100% 0;
+ -ms-transform-origin: 0 100% 0;
+ -o-transform-origin: 0 100% 0;
+ transform-origin: 0 100% 0;
+}
+.heart:after {
+ left: 0;
+ -webkit-transform: rotate(45deg);
+ -moz-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ -o-transform: rotate(45deg);
+ transform: rotate(45deg);
+ -webkit-transform-origin: 100% 100% 0;
+ -moz-transform-origin: 100% 100% 0;
+ -ms-transform-origin: 100% 100% 0;
+ -o-transform-origin: 100% 100% 0;
+ transform-origin: 100% 100% 0;
+}
+@-webkit-keyframes beat {
+ 0% {
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 20%{
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  
+ }
+ 21%{
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 100% {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  
+ }
+}
+@-moz-keyframes beat {
+ 0% {
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 20%{
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  
+ }
+ 21%{
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 100% {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  
+ }
+}
+@-ms-keyframes beat {
+ 0% {
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 20%{
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  
+ }
+ 21%{
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 100% {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  
+ }
+}
+@-o-keyframes beat {
+ 0% {
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 20%{
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  
+ }
+ 21%{
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 100% {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  
+ }
+}
+@keyframes beat {
+ 0% {
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 20%{
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  
+ }
+ 21%{
+  -webkit-transform: scale(1.9);
+  -moz-transform: scale(1.9);
+  -ms-transform: scale(1.9);
+  -o-transform: scale(1.9);
+  transform: scale(1.9);
+  
+ }
+ 100% {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  
+ }
+}
+    </style>
+    
+<script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+    <script>
+    $(document).ready(function animateHeart() {
+    $('span.heart1').animate({
+        fontSize: $('span.heart1').css('fontSize') == '60px' ? '50px' : '60px'
+    }, 500, animateHeart);
+});
+    </script>
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Shreya</h1>
-      <h2 class="project-tagline">mylove</h2>
-      <a href="https://github.com/thexasp/shreya" class="btn">View on GitHub</a>
-      <a href="https://github.com/thexasp/shreya/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/thexasp/shreya/tarball/master" class="btn">Download .tar.gz</a>
+  <p>hi myself I<br>my problem is LOVE<br>my solution is YOU<span class="heart1">&#9829;</span></p>
+<h1 class="logo"><!--a href="http://techumber.com">Techumber</a></h1-->
+ <figure class="heart-wrap">
+  <figure class="heart"></figure>
+ </figure>
+ <p>my snky pillu</>
+  
+  
+    <!--section class="page-header">
+      <h1 class="project-name">Mycutepillu.GitHub.io</h1>
+      <h2 class="project-tagline">a small gift from me. </h2>
+      <a href="https://github.com/thexasp/mycutepillu.github.io" class="btn">View on GitHub</a>
+      <a href="https://github.com/thexasp/mycutepillu.github.io/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/thexasp/mycutepillu.github.io/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
@@ -52,12 +332,12 @@ $ git checkout gh-pages
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/thexasp/shreya">Shreya</a> is maintained by <a href="https://github.com/thexasp">thexasp</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/thexasp/mycutepillu.github.io">Mycutepillu.GitHub.io</a> is maintained by <a href="https://github.com/thexasp">thexasp</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
 
-    </section>
+    </section-->
 
   
   </body>
